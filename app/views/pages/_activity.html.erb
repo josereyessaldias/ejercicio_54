@@ -1,7 +1,7 @@
 
   <% @activities.each do |activity| %>
   <ul class="resultado_fila">
-  	<li><%= link_to activity.name, activity_path(activity.id) %></li>
+  	<li><%= link_to activity.name, activity_path(activity.id) %> | <%= activity.category.name %></li>
   </ul>
   <% end %>
 
