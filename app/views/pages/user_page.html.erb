@@ -1,4 +1,4 @@
-<div class="titulo-user col-5">
+<div class="titulo-user col-12 col-md-5">
 	<img src="<%= @user.photo.normal %>" class="foto_usuario"> 
 	<h2><%= @user.name %></h2>
 </div>
@@ -13,7 +13,7 @@
 <br><br>
 <hr>
 <div class="row">
-	<div class="col-6">
+	<div class="col-12 col-md-6">
 		<h3>Actividades Realizadas</h3>
 		<% @categories.each do |category| %>
 			<% @act_user_realizadas.each do |useract| %>
@@ -49,7 +49,7 @@
 			<% end %>
 		<% end %>
 	</div>
-	<div class="col-6">
+	<div class="col-12 col-md-6">
 		<% if @act_user_por_realizar != [] %>
 			<h3>Actividades por Realizar <%= link_to "Ver en Calendario", user_calendar_path(@user.id), :class=> 'btn btn-sm btn-dark float-right', :style=> 'width:180px;' %></h3> 
 		<% end %>
@@ -90,7 +90,7 @@
 </div>
 
 <%if @trekking != [] %>
-	<div class="col-6 p-5" >
+	<div class="col-12 col-md-6 p-5" >
 	  <div id="map" style=' height: 300px;'></div>
 	</div>
 <% end %>

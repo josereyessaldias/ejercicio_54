@@ -1,3 +1,4 @@
+
 .logo {
 	text-align: center;
 	padding: 15px 0 15px 0;
@@ -103,4 +104,12 @@
 
 .boton {
 	text-align: right;
+}
+
+@media (max-width:800px) {
+
+
+	.barrita{
+		display: none;
+	}
 }
