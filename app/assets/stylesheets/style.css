@@ -112,4 +112,9 @@
 	.barrita{
 		display: none;
 	}
+	.titulo-user{
+	
+	margin: 20px 0 0 0;
+	border: solid 1px black;
+}
 }
