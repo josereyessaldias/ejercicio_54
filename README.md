@@ -3,6 +3,8 @@
 Mejoré la visualización de la geolocalización (puse nombre actividad y cambié color mapa).
 Activé las colecciones, de manera que las actividades puedan ser parte de una colección.
 
+repositorio heroku: https://ejercicio54.herokuapp.com
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
