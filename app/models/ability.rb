@@ -15,6 +15,7 @@ class Ability
         can [:update, :edit], Activity, owner_id: user.id
         can [:manage], [Billing, PromoteActivity], user_id: user.id
         can [:create,:destroy], Contact, user_id: user.id
+        can [:show], Collection
 
         
         

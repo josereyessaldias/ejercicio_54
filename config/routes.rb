@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :collections, only: [:show]
+
   get 'promote_activities/index'
   get 'pages/index'
   get 'user_page/:user_id', to: 'pages#user_page', as: 'user_page'

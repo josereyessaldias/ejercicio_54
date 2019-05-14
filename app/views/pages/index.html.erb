@@ -30,7 +30,7 @@
 		<% @collections.each do |collection| %>
 			<div class="collection_index" style="padding: 5px 0 0 5px">
 				<img src="<%= collection.photo.normal %>" ><br>
-				<%= collection.name %>
+				<%= link_to collection.name, collection_path(collection) %>
 			</div>
 		<% end %><br><br>
 		<h3>Usuarios sugeridos</h3>

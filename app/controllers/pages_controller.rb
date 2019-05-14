@@ -68,7 +68,7 @@ class PagesController < ApplicationController
     @hash = Gmaps4rails.build_markers(@trekking) do |trek, marker|
       marker.lat trek.activity.latitude
       marker.lng trek.activity.longitude
-      marker.title trek.activity.name
+      marker.infowindow trek.activity.name
     end
 
   end

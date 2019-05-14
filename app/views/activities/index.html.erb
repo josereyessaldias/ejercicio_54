@@ -15,6 +15,13 @@
 						<%= link_to 'Marcar como por realizar', asigne_activity_path(current_user, :activity_id=> @activity.id, :status=> 'por_hacer'), method: :post, :class => 'btn btn-warning' %>
 					<% end %>
 				<% end %>
+				<br><br>
+				<h5>Colecciones a la que pertence la actividad:</h5>
+				<ul>
+					<% @activity.collections.each do |collection| %>
+						<li><h6><%= link_to collection.name, collection_path(collection) %></h6></li>
+					<% end %>
+				</ul>
 			</div>
 			<br>
 
